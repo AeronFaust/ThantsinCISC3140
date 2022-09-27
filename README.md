@@ -1,6 +1,6 @@
 # git
 Swann Thantsin
-CID: 23918745
-CISC 3140
-Prof. Katherine Chuang
-Fall 2022 CISC 3140 Repository
+\nCID: 23918745
+\nCISC 3140
+\nProf. Katherine Chuang
+\nFall 2022 CISC 3140 Repository
