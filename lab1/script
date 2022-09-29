@@ -1,0 +1,38 @@
+Script started on 2022-09-28 22:55:35-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="120" LINES="30"]
+]0;faust@DESKTOP-JA9AD97: /mnt/d/College/Fall 2022/CISC 3140/git/lab1[01;32mfaust@DESKTOP-JA9AD97[00m:[01;34m/mnt/d/College/Fall 2022/CISC 3140/git/lab1[00m$ git add.[K .
+warning: CRLF will be replaced by LF in lab1/vscsettings.json.
+The file will have its original line endings in your working directory
+]0;faust@DESKTOP-JA9AD97: /mnt/d/College/Fall 2022/CISC 3140/git/lab1[01;32mfaust@DESKTOP-JA9AD97[00m:[01;34m/mnt/d/College/Fall 2022/CISC 3140/git/lab1[00m$ git commit -m "%[KTerminal Push 2"
+[main 17f9b17] Terminal Push 2
+ 2 files changed, 10 insertions(+)
+ create mode 100644 lab1/script
+ create mode 100644 lab1/vscsettings.json
+]0;faust@DESKTOP-JA9AD97: /mnt/d/College/Fall 2022/CISC 3140/git/lab1[01;32mfaust@DESKTOP-JA9AD97[00m:[01;34m/mnt/d/College/Fall 2022/CISC 3140/git/lab1[00m$ git push
+Username for 'https://github.com': AeronFaust
+Password for 'https://AeronFaust@github.com': 
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 508 bytes | 50.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/AeronFaust/ThantsinCISC3140.git
+   6fafacb..17f9b17  main -> main
+]0;faust@DESKTOP-JA9AD97: /mnt/d/College/Fall 2022/CISC 3140/git/lab1[01;32mfaust@DESKTOP-JA9AD97[00m:[01;34m/mnt/d/College/Fall 2022/CISC 3140/git/lab1[00m$ exit
+
+Script done on 2022-09-28 22:56:19-04:00 [COMMAND_EXIT_CODE="0"]
+/script
+ create mode 100644 lab1/vscsettings.json
+]0;faust@DESKTOP-JA9AD97: /mnt/d/College/Fall 2022/CISC 3140/git/lab1[01;32mfaust@DESKTOP-JA9AD97[00m:[01;34m/mnt/d/College/Fall 2022/CISC 3140/git/lab1[00m$ git push
+Username for 'https://github.com': AeronFaust
+Password for 'https://AeronFaust@github.com': 
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 508 bytes | 50.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/AeronFaust/ThantsinCISC3140.git
+   6fafacb.
