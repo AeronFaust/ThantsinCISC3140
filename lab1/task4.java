@@ -59,35 +59,44 @@ public class task4
         //Proper date flag
         boolean isDate = false;
         
+        //Proper date check for checking custom date
         while(!isDate){          
+            //Checks input with format 1(MM/dd/yyyy)
             if(datetext.matches(format1)) {
                 dateVal = LocalDate.parse(datetext, formatter1);
                 isDate = true;
             } 
+            //Adds "-yyyy"(current year) to the input and checks it with format 2 (MM-dd-yyyy)
             else if(datetext.matches(format2)){
                 String toconcat = "-" + DateTimeFormatter.ofPattern("yyyy").format(now);
                 String newformat2 = datetext + toconcat;
                 dateVal = LocalDate.parse(newformat2, formatter2);
                 isDate = true;
             }
+            //If input is empty, current date is used
             else if(datetext.isEmpty()){
                 isDate = true;
             }
+            //Requests input again for invalid input
             else{          
                 System.out.println("Please enter a valid date format (MM/DD/YYYY or MM-DD or leave empty for current date): ");
                 datetext = input.nextLine();
             }
         }
 
+        //When proper date for current date is given, continue here
         if(isDate) {      
             boolean properChoice = false;
             System.out.println("Please choose a date to compare to: ");
+            //Proper date check for date to be compared to
             while (!properChoice)  
             {
+                //Prompt for what date to choose
                 System.out.println("1. Assignment Due Dates.");
                 System.out.println("2. Quiz Dates.");
                 System.out.println("3. Finals Date.");
                 System.out.println("4. Custom Date.");
+                //To make sure the input is a number
                 while (!input.hasNextInt()) {
                     System.out.println("Please enter a valid option");
                     System.out.println("1. Assignment Due Dates.");
@@ -98,7 +107,9 @@ public class task4
                 }
                 int choiceinput = input.nextInt();
     
+                //Switch cases for chosen date which assigns the value of LocalDate variable to the value of LocalDate variable of the chosen date
                 switch(choiceinput){
+                    //Provides a prompt of a list of assignment due dates
                     case 1:  
                         boolean properDateChoice = false;
                         while(!properDateChoice){
@@ -140,6 +151,7 @@ public class task4
                         properChoice = true;
                         break;
                     case 2:
+                    //Provides a prompt of a list of quiz dates
                         boolean properDateChoice2 = false;
                         while(!properDateChoice2){
                             System.out.println("Please choose a Quiz Date");
@@ -189,17 +201,20 @@ public class task4
                         properChoice = true;
                         break;
                     case 4:
+                    //Gives prompt to enter a custom date
                         Scanner inputcustom = new Scanner(System.in);
 
                         System.out.print("Please enter a date to compare to(MM/DD/YYYY or MM-DD or leave empty for current date): ");
                         String customdatetext = inputcustom.nextLine();
-                    
+                        
                         boolean isCustomDate = false;
+                        //TO check if the date for custom due date is valid with the same format as current date above (with the exception of not allowing empty input)
                         while(!isCustomDate){          
                             if(customdatetext.matches(format1)) {
                                 custom = LocalDate.parse(customdatetext, formatter1);
                                 isCustomDate = true;
                             } 
+                            //Date set to custom date + 1 year if a date before current date is given.
                             else if(customdatetext.matches(format2)){
                                 String toconcatcustom = "-" + DateTimeFormatter.ofPattern("yyyy").format(now);
                                 String customtestformat = customdatetext + toconcatcustom;
@@ -220,11 +235,27 @@ public class task4
                         properChoice = true;
                         break;
                     default:
+                    //If invalid (not 1-4) value is given, properChoice flag is not set to true thus repeating the switch after given a prompt telling user that given choice is invalid
                         System.out.println(choiceinput + " is not a valid option.");
                 }
             }
         }
+        //Initializes variable of type long named diff to the amount of days between current date and comparison date.
+        long diff = dateVal.until(compVal, ChronoUnit.DAYS);
+
+        //Prints current date and date to compare
         System.out.println("Current Date: " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(dateVal));
         System.out.println("Date to Compare: " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(compVal));
+
+        //If the days to compare is negative, print that the comparison date has passed
+        if (diff < 0)
+        {
+            System.out.println("The date has passed.");
+        }
+        //If it is positive, print the amount of days between the two dates
+        else {
+            System.out.print("Days between " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(dateVal) + " and " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(compVal) + ": ");
+            System.out.println(diff + ".");     
+        }
     }
 }
