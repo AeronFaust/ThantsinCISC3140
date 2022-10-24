@@ -120,10 +120,10 @@ public class task4
                             System.out.println("4. Lab4 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(lab4));                
                             while (!input.hasNextInt()) {
                                 System.out.println("Please enter a valid option");
-                                System.out.println("1. Assignment Due Dates.");
-                                System.out.println("2. Quiz Dates.");
-                                System.out.println("3. Finals Date.");
-                                System.out.println("4. Custom Date.");
+                                System.out.println("1. Lab1 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(lab1));
+                                System.out.println("2. Lab2 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(lab2));
+                                System.out.println("3. Lab3 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(lab3));
+                                System.out.println("4. Lab4 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(lab4));     
                                 input.next();
                             }
                             int dateChoice = input.nextInt();
@@ -162,10 +162,11 @@ public class task4
                             System.out.println("5. Quiz5 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(quiz5));                
                             while (!input.hasNextInt()) {
                                 System.out.println("Please enter a valid option");
-                                System.out.println("1. Assignment Due Dates.");
-                                System.out.println("2. Quiz Dates.");
-                                System.out.println("3. Finals Date.");
-                                System.out.println("4. Custom Date.");
+                                System.out.println("1. Quiz1 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(quiz1));
+                                System.out.println("2. Quiz2 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(quiz2));
+                                System.out.println("3. Quiz3 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(quiz3));
+                                System.out.println("4. Quiz4 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(quiz4));  
+                                System.out.println("5. Quiz5 " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(quiz5)); 
                                 input.next();
                             }
                             int dateChoice = input.nextInt();
@@ -244,7 +245,7 @@ public class task4
         long diff = dateVal.until(compVal, ChronoUnit.DAYS);
 
         //Prints current date and date to compare
-        System.out.println("Current Date: " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(dateVal));
+        System.out.println("Current Date:    " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(dateVal));
         System.out.println("Date to Compare: " + DateTimeFormatter.ofPattern("MM/dd/yyyy").format(compVal));
 
         //If the days to compare is negative, print that the comparison date has passed
