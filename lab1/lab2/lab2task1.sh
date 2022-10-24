@@ -4,6 +4,7 @@
 #Professor Katherine Chuang
 #Due 10/26/2022
 
+#initialized dates
 now=`date +%Y-%m-%d`
 
 lab1="2022-09-28"
@@ -22,18 +23,22 @@ finals="2022-12-19"
 setnow=$now
 setcomp=$now
 
+#date user input
 echo "Enter date(format: MM/DD/YYYY or MM-DD or leave empty for current date): "
 read datetext
 
 isDate=false
 
+#proper current date check
 while ! $isDate
 do
+    #MM/DD/YYYY regex
     if [[ $datetext =~ ^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$ ]]
     then
         IFS="/" read monthtext daytext yeartext<<< "$datetext"
         setnow="$yeartext-$monthtext-$daytext"
         isDate=true
+    #MM-DD regex
     elif [[ $datetext =~ ^(1[0-2]|0[1-9])-(3[01]|[12][0-9]|0[1-9])$ ]]
     then 
         setnow="$(date -d "$now" '+%Y')-$datetext"
@@ -48,6 +53,7 @@ do
 done
 choiceinput=false
 
+#proper date to compare check
 while ! $choiceinput
 do
     echo "Please choose a date to compare to: "
@@ -57,6 +63,7 @@ do
     echo "4. Custom Date."
     read dateChoice
 
+    #switch to choose/set date
     case $dateChoice in
     1)
         properDateChoice=false
@@ -172,11 +179,13 @@ do
 esac
 done
 
+#calculating difference in days between two dates
 dateVal=$(date --date="$setnow" '+%s')
 compVal=$(date --date="$setcomp" '+%s')
 
 diff=$(( ($compVal - $dateVal) / (60*60*24) ))
 
+#finalized output
 echo "Current Date:    $setnow"
 echo "Date to Compare: $setcomp"
 
