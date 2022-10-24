@@ -1,0 +1,35 @@
+It is easy to operate with date values in bash, thus it is
+relatively simple to recreate the Java program in bash. A lot
+of basic features of Java (i.e loops, string comparison, regex)
+can be found  in bash. However, bash handles dates a lot better
+as I believe it is built-in, whereas for Java, I had to take
+functions from other libraries. Syntax wise, Java required 
+lines of codes to be differntiated by a ; whereas each line
+of code  in bash functions separately from other lines. In
+addition, bash handles string comparison a lot simpler than 
+Java. For loops, while loops, if-else cases, switch cases
+functions similarly between the two languages but have different
+syntaxes. In Java, to accept user input, we had to create a
+Scanner object and a variable with a declared type to store said
+input into, thus requiring two lines of code to accept user
+input, whereas in bash, we could declare variable to store user
+input and a keyboard input reader in the same line. Displaying
+output both required a single line of code, print in Java and
+echo in bash. I personally prefer Java's user input as the 
+variable storing the user input has more constriction, thus
+allowing for on the spot variable type check. No libraries where
+used in the bash program but libraries used in the Java program
+were LocalDate, LocalDateTime, ZoneId, ZonedDateTime, 
+format.DateTimeFormatter, and temporal.ChronoUnit under 
+java.time library and Scanner, regex.Matcher, regex.Pattern 
+under java.util library. I believe the program cannot be
+completed without the java.util libraries as I cannot think
+of any other way to take user input other than Scanner and
+regex Matcher and Pattern were essential to matching date
+patterns. As for packages under java.time, I believe libraries
+such as LocalDateTime, ZoneId, ZonedDateTime are not important
+as I used them so that I had less code to modify from previous
+assignment. As for ChronoUnit, DateTimeFormatter and LocalDate,
+they are essential as, they are useful for calculating time
+easily, format date value to a format desired easily and set 
+LocalDate variable to work on, respectively.

@@ -1,8 +1,7 @@
 //Swann Thantsin
 //CISC 3140
 //Professor Katherine Chuang
-//Due 9/28/2022
-package git.lab1;
+//Due 10/26/2022
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -14,7 +13,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class task4
+public class lab2task1
 {
     public static void main (String[] args)
     {
