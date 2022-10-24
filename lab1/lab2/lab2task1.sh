@@ -1,4 +1,8 @@
 #! /usr/bin/bash
+#Swann Thantsin
+#CISC 3140
+#Professor Katherine Chuang
+#Due 10/26/2022
 
 now=`date +%Y-%m-%d`
 
