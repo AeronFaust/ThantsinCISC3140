@@ -1,0 +1,14 @@
+java lab2task1 < test2.txt
+Enter date(format: MM/DD/YYYY or MM-DD or leave empty for current date): Please choose a date to compare to: 
+1. Assignment Due Dates.
+2. Quiz Dates.
+3. Finals Date.
+4. Custom Date.
+10 is not a valid option.
+1. Assignment Due Dates.
+2. Quiz Dates.
+3. Finals Date.
+4. Custom Date.
+Current Date:    10/22/2022
+Date to Compare: 12/19/2022
+Days between 10/22/2022 and 12/19/2022: 58.

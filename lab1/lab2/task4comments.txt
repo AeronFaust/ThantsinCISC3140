@@ -1,0 +1,3 @@
+I have already set up a gitignore for .class extensions on java 
+on the previous lab and since this lab is a branch of the
+previous one, .class are already being ignored.

@@ -1,0 +1,23 @@
+Script started on 2022-10-25 02:56:27-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+]0;faust@DESKTOP-JA9AD97: /mnt/d/College/Fall 2022/CISC 3140/git/lab1/lab2[01;32mfaust@DESKTOP-JA9AD97[00m:[01;34m/mnt/d/College/Fall 2022/CISC 3140/git/lab1/lab2[00m$ ./build.sh
+Enter Java file to compile: 
+lab2task1.java
+Enter text file to input to program(leave empty if no file input redirection is needed): 
+test2.txt
+./build.sh: line 20: [test2.txt: command not found
+Enter date(format: MM/DD/YYYY or MM-DD or leave empty for current date): Please choose a date to compare to: 
+1. Assignment Due Dates.
+2. Quiz Dates.
+3. Finals Date.
+4. Custom Date.
+10 is not a valid option.
+1. Assignment Due Dates.
+2. Quiz Dates.
+3. Finals Date.
+4. Custom Date.
+Current Date:    10/22/2022
+Date to Compare: 12/19/2022
+Days between 10/22/2022 and 12/19/2022: 58.
+]0;faust@DESKTOP-JA9AD97: /mnt/d/College/Fall 2022/CISC 3140/git/lab1/lab2[01;32mfaust@DESKTOP-JA9AD97[00m:[01;34m/mnt/d/College/Fall 2022/CISC 3140/git/lab1/lab2[00m$ exit
+
+Script done on 2022-10-25 02:56:51-04:00 [COMMAND_EXIT_CODE="0"]

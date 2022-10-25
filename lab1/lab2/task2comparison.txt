@@ -1,0 +1,9 @@
+Working with makefile to compile and run Java program is a lot
+more seamless compared to bash. It is a lot easier to edit and
+a lot less programming knowledge is required to run it, provided
+proper documentation is put in place for the makefile. It is much
+more simple to extract file name from a file in make compared to
+bash and it is even more simplier to replace file extensions. Make 
+targets are practically bash functions. Overall, operating a
+makefile and working with file redirection on it is a lot more 
+simple in comparison to bash.

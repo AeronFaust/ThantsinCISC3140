@@ -25,7 +25,7 @@ setcomp=$now
 
 #date user input
 echo "Enter date(format: MM/DD/YYYY or MM-DD or leave empty for current date): "
-read datetext
+read -r datetext
 
 isDate=false
 
@@ -35,7 +35,7 @@ do
     #MM/DD/YYYY regex
     if [[ $datetext =~ ^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$ ]]
     then
-        IFS="/" read monthtext daytext yeartext<<< "$datetext"
+        IFS="/" read -r monthtext daytext yeartext<<< "$datetext"
         setnow="$yeartext-$monthtext-$daytext"
         isDate=true
     #MM-DD regex
@@ -48,7 +48,7 @@ do
         isDate=true
     else
         echo "Please enter a valid date format (MM/DD/YYYY or MM-DD or leave empty for current date): "
-        read datetext
+        read -r datetext
     fi
 done
 choiceinput=false
@@ -61,7 +61,7 @@ do
     echo "2. Quiz Dates."
     echo "3. Finals Date."
     echo "4. Custom Date."
-    read dateChoice
+    read -r dateChoice
 
     #switch to choose/set date
     case $dateChoice in
@@ -74,7 +74,7 @@ do
             echo "2. Lab2 $lab2"
             echo "3. Lab3 $lab3"
             echo "4. Lab4 $lab4"
-            read dateChoice
+            read -r dateChoice
             
             case $dateChoice in
             1)
@@ -110,7 +110,7 @@ do
             echo "3. Quiz3 $quiz3"
             echo "4. Quiz4 $quiz4"
             echo "5. Quiz5 $quiz5"
-            read dateChoice
+            read -r dateChoice
             
             case $dateChoice in
             1)
@@ -146,13 +146,13 @@ do
     ;;
     4)
         echo "Please enter a date to compare to(MM/DD/YYYY or MM-DD or leave empty for current date): "
-        read datetext
+        read -r datetext
         isDate=false
         while ! $isDate
         do
             if [[ $datetext =~ ^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$ ]]
             then
-                IFS="/" read monthtext daytext yeartext<<< "$datetext"
+                IFS="/" read -r monthtext daytext yeartext<<< "$datetext"
                 setcomp="$yeartext-$monthtext-$daytext"
                 isDate=true
             elif [[ $datetext =~ ^(1[0-2]|0[1-9])-(3[01]|[12][0-9]|0[1-9])$ ]]
@@ -168,7 +168,7 @@ do
                 isDate=true
             else
                 echo "Please enter a valid date format (MM/DD/YYYY or MM-DD or leave empty for current date): "
-                read datetext
+                read -r datetext
             fi
         done
         choiceinput=true

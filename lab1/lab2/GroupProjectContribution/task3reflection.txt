@@ -1,0 +1,15 @@
+If someone else were to replicate our group's process using
+the same tool, they should get a firm understanding of regex
+in awk as it makes the process so much more smooth.
+
+Our group initially consisted of myself, Tahir, Rami, Jon and Peter
+In terms of the group, communication was great as everyone
+openly communicated about what they are having trouble on and
+what they need help with. We first assigned 1 query program to 
+each member of the group to get 5 awk programs at the end but
+unfortunately Peter's mother has passed away during the project
+so he was unable to work with us. We moved onto 4 person group, 
+Rami worked on the first program and me and Tahir worked on the
+other four programs together, leaving Jon with the presentation
+making. We had no scheduling issues as we just worked on it during 
+our free time and it happens that they aligned. 
