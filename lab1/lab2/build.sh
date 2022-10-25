@@ -31,5 +31,26 @@ read compileTarget
 echo "Enter text file to input to program(leave empty if no file input redirection is needed): "
 read inputTarget
 
-compile
-runProgram
+if [ -f "${compileTarget%.*}.class" ]
+then
+{
+    classFile="${compileTarget%.*}.class"
+    classModified=$(date -r "$classFile" "+%s")
+    javaModified=$(date -r "$compileTarget" "+%s")
+
+    difference=$(($javaModified-$classModified))
+
+    if [ $difference > 0 ]
+    then
+        rm $classFile
+        compile
+        runProgram
+    else
+        runProgram
+    fi
+}
+else 
+    compile
+    runProgram
+fi
+
