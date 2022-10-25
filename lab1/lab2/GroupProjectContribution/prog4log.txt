@@ -1,0 +1,20 @@
+Starting to read
+Finished reading
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Days of the Week: Commits
+Sun             : 271702
+Mon             : 694314
+Tue             : 784852
+Wed             : 784996
+Thu             : 769729
+Fri             : 722020
+Sat             : 303548

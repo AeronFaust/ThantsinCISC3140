@@ -1,0 +1,14 @@
+Starting to read
+Finished reading
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+The occurences of the word "bug" in a commit message : 288
+The occurences of the word "fix" in a commit message : 22762
